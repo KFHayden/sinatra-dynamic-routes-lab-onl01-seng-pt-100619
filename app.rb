@@ -7,11 +7,16 @@ class App < Sinatra::Base
   end
   
   get '/square/:number' do
+<<<<<<< HEAD
     @square = params[:number].to_i * params[:number].to_i
+=======
+    @square = params[:number].to_i**
+>>>>>>> 3ca65bdcdc6ff35dc4cd6544f8405ec18778aa5c
     @square.to_s
   end
   
   get '/say/:number/:phrase' do
+<<<<<<< HEAD
     @number = params[:number].to_i
     @phrase = params[:phrase]
     @strings = @phrase * @number
@@ -36,6 +41,17 @@ class App < Sinatra::Base
       when "divide"
         (@n1 / @n2).to_s
     end
+=======
+    
+  end
+  
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    
+  end
+  
+  get '/:opteration/:number1/:number2' do
+    
+>>>>>>> 3ca65bdcdc6ff35dc4cd6544f8405ec18778aa5c
   end
 
 end
